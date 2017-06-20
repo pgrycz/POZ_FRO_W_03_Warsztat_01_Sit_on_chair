@@ -70,13 +70,54 @@
     font-style: normal;
 }
 
+p {
+  margin: 0;
+}
+
 html * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'ralewayregular';
+  font-family: ralewayregular;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header, section, footer {
   width: 100%;
+}
+
+div.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.float {
+  overflow: auto;
+}
+
+.float > div {
+  float: left;
+}
+
+header span {
+  float: left;
+}
+
+nav li {
+  float: right;
+}
+
+.nav-options li {
+  clear: both;
+}
+
+.headline .black-chair:nth-child(1) {
+  float: left;
+}
+
+.headline .black-chair:nth-child(2) {
+  float: right;
 }
