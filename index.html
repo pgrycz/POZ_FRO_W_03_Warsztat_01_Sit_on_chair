@@ -6,44 +6,41 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- header -->
 <header>
   <div class="container">
     <span>SIT ON CHAIR</span>
-    <nav>
-      <ul class="nav float">
-        <li>O FIRMIE
-          <ul class="nav-options">
-            <li>Aktualności</li>
-            <li>Nasz team</li>
-            <li>Historia</li>
-          </ul>
-        </li>
-        <li>GALERIA</li>
-        <li>KONTAKT</li>
-      </ul>
+    <nav class="float">
+      <a href="#">O FIRMIE</a>
+      <a href="#">GALERIA</a>
+      <a href="#">KONTAKT</a>
     </nav>
   </div>
 </header>
+<!-- section 1 -->
 <section>
   <div class="container float">
     <div>
-      <span><</span>
+      <span class="prev"><a href="#"><</a></span>
     </div>
-    <div class="headline float">
-      <img src="images/black_chair.png" alt="black chair">
-      <h1>SIT ON OUR CHAIR</h1>
+    <div>
+    <img src="images/black_chair.png" alt="black chair">
+    </div>
+    <div class="headline">
+      <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
       <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
         Suspendisse a pellentesque dui, non felis. Maecenas
         malesuada elit lectus felis, malesuada ultricies.
         Curabitur et ligula. Ut molestie a, ultricies porta
         urna.</p>
-      <span>ZOBACZ WIĘCEJ</span>
+      <span><a href="#">ZOBACZ WIĘCEJ</a></span>
     </div>
     <div>
-      <span>></span>
+      <span class="next"><a href="#">></a></span>
     </div>
   </div>
 </section>
+<!-- section 2 -->
 <section>
   <div class="container float three-headers">
     <div>
@@ -56,7 +53,7 @@
       <span class="transparent"></span>
       <span>Chair MARGARITA</span>
     </div>
-    <div>
+    <div class="description">
       <span>Finds all inputs</span>
       <p>Finds all inputs that are not checked and
       highlights the next sibling span. Notice there
@@ -67,9 +64,10 @@
     </div>
   </div>
 </section>
+<!-- section 3 -->
 <section>
   <div class="container float three-headers">
-    <span class="section_head">Cennik</span>
+    <span class="section-head">CENNIK</span>
     <div>
       <div class="circle-small"></div>
       <div class="circle-large">
@@ -81,7 +79,7 @@
           <li>Zakup towaru + dowóz</li>
           <li>Serwis</li>
         </ul>
-        <span>DOŁĄCZ</span>
+        <span><a href="#">DOŁĄCZ</a></span>
       </div>
     </div>
     <div>
@@ -96,7 +94,7 @@
           <li>Serwis</li>
           <li>Gwarancja 5 lat</li>
         </ul>
-        <span>DOŁĄCZ</span>
+        <span><a href="#">DOŁĄCZ</a></span>
       </div>
     </div>
     <div>
@@ -112,22 +110,28 @@
           <li>Gwarancja 6 lat</li>
           <li>Porady projektanta</li>
         </ul>
-        <span>DOŁĄCZ</span>
+        <span><a href="#">DOŁĄCZ</a></span>
       </div>
     </div>
   </div>
 </section>
+<!-- section 4 -->
 <section>
-  <div class="container float two-header">
-    <span class="section_head">KONTAKT</span>
-    <div>
+  <div class="container float">
+    <span class="section-head">KONTAKT</span>
+    <div class="form">
       <form>
         <input type="text" id="name" placeholder="Imię">
         <input type="text" id="email" placeholder="email">
-        <textarea name="info" id="info" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+        <textarea name="info"
+                  id="info"
+                  cols="30"
+                  rows="10"
+                  placeholder="Wiadomość">
+        </textarea>
       </form>
     </div>
-    <div>
+    <div class="submit">
       <form>
         <img src="images/red_chair.png" alt="red chair">
         <div>
@@ -139,15 +143,18 @@
     </div>
   </div>
 </section>
+<!-- footer -->
 <footer>
-  <span>Copyright 2014 | All Rights Reserved - Sit On Chair</span>
-  <div class="social">
-    <img src="images/flickr.png" alt="flickr">
-    <img src="images/vimeo.png" alt="vimeo">
-    <img src="images/pinterest.png" alt="pinterest">
-    <img src="images/twitter.png" alt="twitter">
+  <div class="container float">
+    <span>Copyright 2014 | All Rights Reserved - Sit On Chair</span>
+    <span class="footer-title">SIT ON CHAIR</span>
+    <div class="social">
+      <a href="#"><img src="images/flickr.png" alt="flickr"></a>
+      <a href="#"><img src="images/vimeo.png" alt="vimeo"></a>
+      <a href="#"><img src="images/pinterest.png" alt="pinterest"></a>
+      <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+    </div>
   </div>
-  <span>SIT ON CHAIR</span>
 </footer>
 </body>
 </html>
