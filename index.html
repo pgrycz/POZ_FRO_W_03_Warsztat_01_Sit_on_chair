@@ -6,10 +6,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- tryout: class notation changed to BEM nomenclature -->
 <!-- header -->
 <header>
   <div class="container">
-    <span>SIT ON CHAIR</span>
+    <div class="header__logo">
+      <span class="logo__font">SIT <span class="logo__font--bold">ON</span> CHAIR</span>
+    </div>
     <nav class="float">
       <a href="#">O FIRMIE</a>
       <a href="#">GALERIA</a>
@@ -20,23 +23,23 @@
 <!-- section 1 -->
 <section>
   <div class="container float">
-    <div>
-      <span class="prev"><a href="#"><</a></span>
+    <div class="prev">
+      <a href="#"><</a>
     </div>
     <div>
     <img src="images/black_chair.png" alt="black chair">
     </div>
     <div class="headline">
-      <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+      <h1 class="logo__font">SIT <span class="logo__font--bold">ON</span> OUR <span class="logo__font--bold">CHAIR</span></h1>
       <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
         Suspendisse a pellentesque dui, non felis. Maecenas
         malesuada elit lectus felis, malesuada ultricies.
         Curabitur et ligula. Ut molestie a, ultricies porta
         urna.</p>
-      <span><a href="#">ZOBACZ WIĘCEJ</a></span>
+      <span class="headline__button"><a href="#">ZOBACZ WIĘCEJ</a></span>
     </div>
-    <div>
-      <span class="next"><a href="#">></a></span>
+    <div class="next">
+      <a href="#">></a>
     </div>
   </div>
 </section>
