@@ -6,58 +6,56 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- tryout: class notation changed to BEM nomenclature -->
+<!-- tryout: class notation changed to BEM -->
 <!-- header -->
 <header>
-  <div class="container">
-    <div class="header__logo">
-      <span class="logo__font">SIT <span class="logo__font--bold">ON</span> CHAIR</span>
-    </div>
-    <nav class="float">
+  <div class="header__container">
+    <span class="header__logo__item">SIT <span class="header__logo__item--bold">ON</span> CHAIR</span>
+    <nav class="header__nav">
       <a href="#">O FIRMIE</a>
       <a href="#">GALERIA</a>
       <a href="#">KONTAKT</a>
     </nav>
   </div>
 </header>
-<!-- section 1 -->
-<section>
-  <div class="container float">
-    <div class="prev">
-      <a href="#"><</a>
-    </div>
+<!-- section .headline -->
+<section class="headline">
+  <div class="headline__container">
+    <a class="headline__prev" href="#"><</a>
     <div>
-    <img src="images/black_chair.png" alt="black chair">
+      <img class="headline__img"
+           src="images/black_chair.png"
+           alt="black chair">
     </div>
-    <div class="headline">
-      <h1 class="logo__font">SIT <span class="logo__font--bold">ON</span> OUR <span class="logo__font--bold">CHAIR</span></h1>
+    <div class="headline__text">
+      <h1 class="headline__logo__item">SIT <span class="headline__logo__item--bold">ON</span> OUR <span class="headline__logo__item--bold">CHAIR</span></h1>
       <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
         Suspendisse a pellentesque dui, non felis. Maecenas
         malesuada elit lectus felis, malesuada ultricies.
         Curabitur et ligula. Ut molestie a, ultricies porta
         urna.</p>
-      <span class="headline__button"><a href="#">ZOBACZ WIĘCEJ</a></span>
+      <button class="headline__button"><a href="#">Zobacz więcej</a></button>
     </div>
-    <div class="next">
-      <a href="#">></a>
-    </div>
+      <a class="headline__next" href="#">></a>
   </div>
 </section>
-<!-- section 2 -->
-<section>
-  <div class="container float three-headers">
-    <div>
-      <img src="images/box1_img.jpg" alt="box1">
-      <span class="transparent"></span>
-      <span>Chair CLAIR</span>
+<!-- section .description -->
+<section class="description">
+  <div class="description__container">
+    <div class="description__img">
+      <img src="images/box1_img.jpg"
+           alt="box1">
+      <span class="description__transparent"></span>
+      <span class="description__title--img">Chair CLAIR</span>
     </div>
-    <div>
-      <img src="images/box2_img.jpg" alt="box2">
-      <span class="transparent"></span>
-      <span>Chair MARGARITA</span>
+    <div class="description__img">
+      <img src="images/box2_img.jpg"
+            alt="box2">
+      <span class="description__transparent"></span>
+      <span class="description__title--img">Chair MARGARITA</span>
     </div>
-    <div class="description">
-      <span>Finds all inputs</span>
+    <div class="description__text">
+      <span class="description__title--text">Finds all inputs</span>
       <p>Finds all inputs that are not checked and
       highlights the next sibling span. Notice there
       is no change when clicking the checkboxes
@@ -67,95 +65,120 @@
     </div>
   </div>
 </section>
-<!-- section 3 -->
-<section>
-  <div class="container float three-headers">
-    <span class="section-head">CENNIK</span>
-    <div>
-      <div class="circle-small"></div>
-      <div class="circle-large">
-        <span>8599 PLN/MSC</span>
+<!-- section .pricelist -->
+<section class="pricelist">
+  <div class="pricelist__container">
+    <span class="pricelist__title">CENNIK</span>
+
+    <div class="pricelist_item--odd">
+      <div class="pricelist__circle__small--odd"></div>
+      <span class="pricelist__title--odd">BASIC PLAN</span>
+      <div class="pricelist__circle__large--odd">
+        <span class="pricelist__price--odd">85<sup>99</sup></span>
+        <span class="pricelist__currency--odd">PLN/MSC</span>
       </div>
-      <span>BASIC PLAN</span>
-      <div class="listing">
+      <div class="pricelist__item__listing--odd">
         <ul>
           <li>Zakup towaru + dowóz</li>
           <li>Serwis</li>
         </ul>
-        <span><a href="#">DOŁĄCZ</a></span>
+        <button class="pricelist__button--odd"><a href="#">DOŁĄCZ</a></button>
       </div>
     </div>
-    <div>
-      <div class="circle-small"></div>
-      <div class="circle-large">
-        <span>9599 PLN/MSC</span>
+
+    <div class="pricelist_item--even">
+      <div class="pricelist__circle__small--even"></div>
+      <span class="pricelist__title--even">BASIC PLAN</span>
+      <div class="pricelist__circle__large--even">
+        <span class="pricelist__price--even">85<sup>99</sup></span>
+        <span class="pricelist__currency--even">PLN/MSC</span>
       </div>
-      <span>STANDARD PLAN</span>
-      <div class="listing">
+      <div class="pricelist__item__listing--even">
         <ul>
           <li>Zakup towaru + dowóz</li>
           <li>Serwis</li>
-          <li>Gwarancja 5 lat</li>
         </ul>
-        <span><a href="#">DOŁĄCZ</a></span>
+        <button class="pricelist__button--even"><a href="#">DOŁĄCZ</a></button>
       </div>
     </div>
-    <div>
-      <div class="circle-small"></div>
-      <div class="circle-large">
-        <span>21100 PLN/MSC</span>
+
+    <div class="pricelist_item--odd">
+      <div class="pricelist__circle__small--odd"></div>
+      <span class="pricelist__title--odd">BASIC PLAN</span>
+      <div class="pricelist__circle__large--odd">
+        <span class="pricelist__price--odd">85<sup>99</sup></span>
+        <span class="pricelist__currency--odd">PLN/MSC</span>
       </div>
-      <span>ADVANCE PLAN</span>
-      <div class="listing">
+      <div class="pricelist__item__listing--odd">
         <ul>
           <li>Zakup towaru + dowóz</li>
           <li>Serwis</li>
-          <li>Gwarancja 6 lat</li>
-          <li>Porady projektanta</li>
         </ul>
-        <span><a href="#">DOŁĄCZ</a></span>
+        <button class="pricelist__button--odd"><a href="#">DOŁĄCZ</a></button>
       </div>
     </div>
+
   </div>
 </section>
-<!-- section 4 -->
-<section>
-  <div class="container float">
-    <span class="section-head">KONTAKT</span>
-    <div class="form">
-      <form>
-        <input type="text" id="name" placeholder="Imię">
-        <input type="text" id="email" placeholder="email">
-        <textarea name="info"
+<!-- section .contact -->
+<section class="contact">
+  <div class="contact__container">
+    <span class="contact__title">KONTAKT</span>
+      <form class="contact__form">
+        <input class="contact__form--name"
+               type="text"
+               id="name"
+               placeholder="Imię">
+        <input class="contact__form--email"
+               type="text"
+               id="email"
+               placeholder="email">
+        <textarea class="contact__form__textarea"
+                  name="info"
                   id="info"
                   cols="30"
                   rows="10"
                   placeholder="Wiadomość">
         </textarea>
       </form>
-    </div>
-    <div class="submit">
-      <form>
-        <img src="images/red_chair.png" alt="red chair">
-        <div>
-          <input type="checkbox" name="checkbox" checked>
-          <label for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
-          <input type="submit" value="WYŚLIJ">
-        </div>
+      <form class="submit__form">
+        <img class="submit__form__img"
+             src="images/red_chair.png"
+             alt="red chair">
+        <input class="submit__form--checkbox"
+               type="checkbox"
+               name="checkbox"
+               checked>
+        <label class="submit__form--description"
+               for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
+        <input class="submit__form--submit"
+               type="submit"
+               value="WYŚLIJ">
       </form>
-    </div>
   </div>
 </section>
 <!-- footer -->
 <footer>
-  <div class="container float">
-    <span>Copyright 2014 | All Rights Reserved - Sit On Chair</span>
-    <span class="footer-title">SIT ON CHAIR</span>
-    <div class="social">
-      <a href="#"><img src="images/flickr.png" alt="flickr"></a>
-      <a href="#"><img src="images/vimeo.png" alt="vimeo"></a>
-      <a href="#"><img src="images/pinterest.png" alt="pinterest"></a>
-      <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+  <div class="footer__container">
+    <span class="footer__register">Copyright 2014 | All Rights Reserved - Sit On Chair</span>
+    <span class="footer__logo__item">SIT <span class="footer__logo__item--bold">ON</span> CHAIR</span>
+    <div class="footer__social">
+      <a href="#">
+        <img src="images/flickr.png"
+        alt="flickr">
+      </a>
+      <a href="#">
+        <img src="images/vimeo.png"
+        alt="vimeo">
+      </a>
+      <a href="#">
+        <img src="images/pinterest.png"
+        alt="pinterest">
+      </a>
+      <a href="#">
+        <img src="images/twitter.png"
+        alt="twitter">
+      </a>
     </div>
   </div>
 </footer>
