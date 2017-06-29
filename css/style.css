@@ -570,12 +570,21 @@ input[type="submit"] {
 
 /*todo: checkbox doesn't work for now*/
 input[type="checkbox"] {
-    width: 48px;
-    height: 48px;
-    background: url('../images/form_ok.jpg');
+    display:none;
 }
 
-label[for="checkbox"] {
+input[type="checkbox"] + label {
+    border: 1px solid #24BA9F;
+    height: 48px;
+    width: 48px;
+}
+
+input[type="checkbox"]:checked + label {
+    background: url('../images/form_ok.jpg') center no-repeat;
+    height: 48px;
+    width: 48px;
+}
+.checkbox__label {
   width: 270px;
   margin-left: 10px;
   font-size: 1.20rem;
