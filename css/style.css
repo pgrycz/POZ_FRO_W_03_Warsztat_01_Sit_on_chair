@@ -199,17 +199,17 @@ not sure for now how the code construct may look with slider working*/
 }
 
 .slider__button {
+  display: block;
+  padding-top: 12px;
+  margin-left: 60px;
   margin-top: 30px;
   font-size: 1.5rem;
   text-transform: uppercase;
   width: 265px;
   height: 50px;
   background-color: #24BA9F;
-  border-radius: 10px;
-}
-
-.slider__button a {
   color: #fff;
+  border-radius: 10px;
 }
 
 /*description*/
@@ -571,6 +571,7 @@ input[type="submit"] {
   color: #FFF;
   background-color: #24BA9F;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /*todo: checkbox displays fine for now but doesn't work as it should and
@@ -583,13 +584,16 @@ input[type="checkbox"] + label {
     border: 1px solid #72e0cc;
     height: 48px;
     width: 48px;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label {
     background: url('../images/form_ok.jpg') center no-repeat;
     height: 48px;
     width: 48px;
+    cursor: pointer;
 }
+
 .checkbox__label {
   width: 270px;
   margin-left: 10px;
