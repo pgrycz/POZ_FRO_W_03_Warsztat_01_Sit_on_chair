@@ -537,7 +537,7 @@ sup {
 input[type="text"],
 textarea {
   width: 100%;
-  border: 1px solid #24BA9F;
+  border: 1px solid #72e0cc;
   font-size: 2rem;
   font-family: inherit;
   padding: 12px;
@@ -553,33 +553,39 @@ input[id="contact__email"] {
 }
 
 .submit__img {
-  margin-left: 60px;
+  margin-left: 20px;
+  margin-bottom: 35px;
 }
 
 input[type="submit"] {
   font-size: 2rem;
   font-family: "ralewaybold";
   width: 100%;
-  padding: 15px;
+  padding: 18px;
+  margin-top: 45px;
   color: #FFF;
   background-color: #24BA9F;
   border-radius: 10px;
 }
 
+/*todo: checkbox doesn't work for now*/
 input[type="checkbox"] {
-    display:none;
+    width: 48px;
+    height: 48px;
+    background: url('../images/form_ok.jpg');
 }
 
-input[type="checkbox"] {
-    display: inline-block;
-    width: 48px;
-    height: 40px;
-    background: url('../images/form_ok.jpg');
+label[for="checkbox"] {
+  width: 270px;
+  margin-left: 10px;
+  font-size: 1.20rem;
+  color: #C2C2C2;
 }
 
 /*footer*/
 .footer__register {
   float: left;
+  letter-spacing: 1px;
 }
 
 .footer__social,
@@ -589,15 +595,17 @@ input[type="checkbox"] {
 
 .footer__logo {
   margin-left: 60px;
+  font-size: 1.3rem;
 }
 
 .footer__social {
   margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .footer__register,
 .footer__logo {
-  margin-top: 105px;
+  margin-top: 100px;
 }
 
 [class*="footer__logo"],
