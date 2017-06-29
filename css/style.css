@@ -135,8 +135,8 @@ header {
   margin-right: 50px;
 }
 
-/*headline*/
-.headline {
+/*slider*/
+.slider {
   background: #fafafa; /* Old browsers */
   background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 40%, #cccbd3 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #fafafa 0%,#fafafa 40%,#cccbd3 100%); /* Chrome10-25,Safari5.1-6 */
@@ -144,45 +144,49 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cccbd3',GradientType=0 ); /* IE6-9 */
 }
 
-.headline__container > * {
+.slider__container > * {
   float: left;
 }
 
-.headline__container::after {
+.slider__container::after {
   content: '';
   clear: both;
   display: table;
 }
 
-.headline__prev, .headline__next {
+.slider__prev, .slider__next {
   font-family: "ralewaylight";
   font-size: 5rem;
   color: #24BA9F;
   margin-top: 200px;
 }
 
-.headline__next {
+.slider__next {
   float: right;
 }
 
-.headline__img {
+/*in source image this element is set more to left side
+probably using position:absolute with offset but it destroy the
+overall code construct - for now it seems to be more safe but I'm
+not sure for now how the code construct may look with slider working*/
+.slider__img {
   margin-top: 80px;
   width: 125%;
   height: 125%;
 }
 
-[class*="headline__logo__item"] {
+[class*="slider__logo__item"] {
   margin-top: 150px;
   margin-bottom: 40px;
   font-size: 2.5rem;
 }
 
-.headline__logo__item--bold {
+.slider__logo__item--bold {
   font-family: "ralewaybold";
   color: #24BA9F;
 }
 
-.headline__text {
+.slider__text {
   width: 40%;
   margin-left: 30px;
   padding: 0 20px;
@@ -190,11 +194,11 @@ header {
   line-height: 25px;
 }
 
-.headline__text p {
+.slider__text p {
   font-size: 0.9rem;
 }
 
-.headline__button {
+.slider__button {
   margin-top: 30px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -204,7 +208,7 @@ header {
   border-radius: 10px;
 }
 
-.headline__button a {
+.slider__button a {
   color: #fff;
 }
 
@@ -568,7 +572,8 @@ input[type="submit"] {
   border-radius: 10px;
 }
 
-/*todo: checkbox doesn't work for now*/
+/*todo: checkbox displays fine for now but doesn't work as it should and
+I'm not sure whether it's written properly with proper code construct*/
 input[type="checkbox"] {
     display:none;
 }
