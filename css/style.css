@@ -479,3 +479,66 @@ sup {
   background-color: #FFF;
   color: #24BA9F;
 }
+
+/*contact*/
+.contact__container {
+  position: relative;
+}
+
+.contact__headline {
+  position: absolute;
+  width: 320px;
+  top: 40px;
+  left: 0;
+  font-family: "ralewaymedium";
+  font-size: 1.3rem;
+  color: #575757;
+  padding-bottom: 3px;
+  border-bottom: 7px solid #24BA9F;
+}
+
+.contact__container > form {
+  float: left;
+}
+
+.contact__container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/*footer*/
+footer {
+  /*height: 130px;*/
+}
+
+.footer__register {
+  float: left;
+}
+
+.footer__social,
+.footer__logo {
+  float: right;
+}
+
+.footer__logo {
+  margin-left: 60px;
+}
+
+.footer__social {
+  margin: 50px 0;
+}
+
+.footer__register,
+.footer__logo {
+  margin-top: 60px;
+}
+
+[class*="footer__logo"],
+.footer__register {
+  color: #939393;
+}
+
+.footer__logo--bold {
+  font-family: "ralewaybold";
+}
