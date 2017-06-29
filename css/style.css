@@ -387,6 +387,7 @@ header {
 
 .pricelist__circle__large--even {
   background-color: #F9F9F9;
+  border: 2px solid #F9F9F9;
 }
 
 [class*="pricelist__price"] {
