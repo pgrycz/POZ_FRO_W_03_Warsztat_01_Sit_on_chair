@@ -580,7 +580,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
-    border: 1px solid #24BA9F;
+    border: 1px solid #72e0cc;
     height: 48px;
     width: 48px;
 }
