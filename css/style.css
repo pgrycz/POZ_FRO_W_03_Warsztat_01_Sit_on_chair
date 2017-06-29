@@ -76,7 +76,9 @@ html * {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
   font-family: "ralewayregular";
 }
 
@@ -86,6 +88,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+textarea {
+  resize: none;
 }
 
 /*container, centered*/
@@ -281,6 +287,7 @@ header {
 
 /*pricelist*/
 .pricelist {
+  height: 724px;
   background-color: #F1F1F1;
 }
 
@@ -497,21 +504,80 @@ sup {
   border-bottom: 7px solid #24BA9F;
 }
 
-.contact__container > form {
+.contact * {
+  display: block;
+}
+
+.contact__form,
+.submit__form {
   float: left;
 }
 
-.contact__container::after {
+.contact__form {
+  width: 60%;
+  margin-top: 120px;
+}
+
+.submit__form {
+  width: 340px;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+.submit > * {
+  float: left;
+}
+
+.submit::after {
   content: '';
   clear: both;
   display: table;
 }
 
-/*footer*/
-footer {
-  /*height: 130px;*/
+input[type="text"],
+textarea {
+  width: 100%;
+  border: 1px solid #24BA9F;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 12px;
 }
 
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #C2C2C2;
+}
+
+input[id="contact__email"] {
+  margin: 28px 0;
+}
+
+.submit__img {
+  margin-left: 60px;
+}
+
+input[type="submit"] {
+  font-size: 2rem;
+  font-family: "ralewaybold";
+  width: 100%;
+  padding: 15px;
+  color: #FFF;
+  background-color: #24BA9F;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 48px;
+    height: 40px;
+    background: url('../images/form_ok.jpg');
+}
+
+/*footer*/
 .footer__register {
   float: left;
 }
@@ -526,12 +592,12 @@ footer {
 }
 
 .footer__social {
-  margin: 50px 0;
+  margin-top: 90px;
 }
 
 .footer__register,
 .footer__logo {
-  margin-top: 60px;
+  margin-top: 105px;
 }
 
 [class*="footer__logo"],

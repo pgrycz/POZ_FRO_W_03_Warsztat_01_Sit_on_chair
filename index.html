@@ -124,34 +124,30 @@
   <div class="contact__container">
     <span class="contact__headline">KONTAKT</span>
       <form class="contact__form">
-        <input class="contact__form--name"
-               type="text"
-               id="name"
+        <input type="text"
+               id="contact__name"
                placeholder="Imię">
-        <input class="contact__form--email"
-               type="text"
-               id="email"
+        <input type="text"
+               id="contact__email"
                placeholder="email">
-        <textarea class="contact__form__textarea"
-                  name="info"
+        <textarea name="info"
                   id="info"
                   cols="30"
-                  rows="10"
+                  rows="5"
                   placeholder="Wiadomość">
         </textarea>
       </form>
       <form class="submit__form">
-        <img class="submit__form__img"
+        <img class="submit__img"
              src="images/red_chair.png"
              alt="red chair">
-        <input class="submit__form--checkbox"
-               type="checkbox"
-               name="checkbox"
-               checked>
-        <label class="submit__form--description"
-               for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
-        <input class="submit__form--submit"
-               type="submit"
+        <div class="submit">
+          <input type="checkbox"
+                 name="checkbox"
+                 checked>
+          <label for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
+        </div>
+        <input type="submit"
                value="WYŚLIJ">
       </form>
   </div>
