@@ -577,7 +577,7 @@ input[type="submit"] {
 /*todo: checkbox displays fine for now but doesn't work as it should and
 I'm not sure whether it's written properly with proper code construct*/
 input[type="checkbox"] {
-    display:none;
+    display: none;
 }
 
 input[type="checkbox"] + label {
