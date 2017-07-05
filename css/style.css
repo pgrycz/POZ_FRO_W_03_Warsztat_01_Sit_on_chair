@@ -587,21 +587,18 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/*todo: checkbox displays fine for now but doesn't work as it should and
-I'm not sure whether it's written properly with proper code construct or
-it needs javascript or further label tag adjustments*/
 input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"] + label[for="checkbox"] {
     border: 1px solid #72e0cc;
     height: 48px;
     width: 48px;
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked + label[for="checkbox"] {
     background: url('../images/form_ok.jpg') center no-repeat;
     height: 48px;
     width: 48px;
