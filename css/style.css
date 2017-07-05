@@ -363,7 +363,7 @@ not sure for now how the code construct may look with slider working*/
 
 .pricelist__circle__small--even {
   background-color: #F9F9F9;
-  box-shadow: 0 0 0 15px #24BA9F inset;
+  border: 15px solid #24BA9F;
 }
 
 [class*="pricelist__title"] {
