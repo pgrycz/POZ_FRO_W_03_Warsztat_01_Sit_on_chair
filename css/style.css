@@ -136,12 +136,19 @@ header {
 }
 
 /*slider*/
+/*I'm not sure how the code construct for that section may look with
+slider working*/
 .slider {
   background: #fafafa; /* Old browsers */
   background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 40%, #cccbd3 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #fafafa 0%,#fafafa 40%,#cccbd3 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #fafafa 0%,#fafafa 40%,#cccbd3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cccbd3',GradientType=0 ); /* IE6-9 */
+}
+
+.slider__container {
+  position: relative;
+  height: 510px;
 }
 
 .slider__container > * {
@@ -165,10 +172,16 @@ header {
   float: right;
 }
 
-/*in source image this element is set more to left side
-probably using position:absolute with offset but it destroy the
-overall code construct - for now it seems to be more safe but I'm
-not sure for now how the code construct may look with slider working*/
+.slider__main > * {
+  float: left;
+}
+
+.slider__main {
+  position: absolute;
+  left: -30px;
+  width: 974px;
+}
+
 .slider__img {
   margin-top: 80px;
   width: 125%;
@@ -187,8 +200,8 @@ not sure for now how the code construct may look with slider working*/
 }
 
 .slider__text {
-  width: 40%;
-  margin-left: 30px;
+  width: 45%;
+  margin-left: 50px;
   padding: 0 20px;
   text-align: center;
   line-height: 25px;
@@ -201,7 +214,7 @@ not sure for now how the code construct may look with slider working*/
 .slider__button {
   display: block;
   padding-top: 12px;
-  margin-left: 60px;
+  margin-left: 65px;
   margin-top: 30px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -575,7 +588,8 @@ input[type="submit"] {
 }
 
 /*todo: checkbox displays fine for now but doesn't work as it should and
-I'm not sure whether it's written properly with proper code construct*/
+I'm not sure whether it's written properly with proper code construct or
+it needs javascript or further label tag adjustments*/
 input[type="checkbox"] {
     display: none;
 }
