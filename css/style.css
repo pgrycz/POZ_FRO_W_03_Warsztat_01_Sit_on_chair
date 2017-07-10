@@ -96,8 +96,10 @@ textarea {
 
 /*container, centered*/
 [class*="container"] {
-	max-width: 1056px;
+	max-width: 1076px;
 	margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 	overflow: auto;
 }
 
@@ -126,7 +128,7 @@ header {
 }
 
 .header__nav a {
-  font-family: "ralewaybold";
+  font-family: 'ralewaysemibold';
   color: #fff;
 }
 
@@ -148,7 +150,7 @@ slider working*/
 
 .slider__container {
   position: relative;
-  height: 510px;
+  height: 510px; /*when height isn't set manually a vertical scroll appears*/
 }
 
 .slider__container > * {
@@ -161,6 +163,7 @@ slider working*/
   display: table;
 }
 
+/*don't know how to make (z-index???) .slider_prev over offsetted to the left .slider_main*/
 .slider__prev, .slider__next {
   font-family: "ralewaylight";
   font-size: 5rem;
@@ -209,6 +212,7 @@ slider working*/
 
 .slider__text p {
   font-size: 0.9rem;
+  line-height: 1.4rem;
 }
 
 .slider__button {
@@ -292,6 +296,7 @@ slider working*/
 
 .description__text p {
   font-size: 0.9rem;
+  line-height: 1.3rem;
 }
 
 .description__text p:nth-of-type(1) {
@@ -299,12 +304,12 @@ slider working*/
 }
 
 .description__text p:nth-of-type(2) {
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 /*pricelist*/
 .pricelist {
-  height: 724px;
+  padding-bottom: 35px;
   background-color: #F1F1F1;
 }
 
@@ -324,11 +329,12 @@ slider working*/
   display: table;
 }
 
+/*didn't know haw to write [class*="headline"]::after selector to add bottom border that way*/
 .pricelist__headline {
   position: absolute;
   width: 320px;
   top: 40px;
-  left: 0;
+  left: 10px;
   font-family: "ralewaymedium";
   font-size: 1.3rem;
   color: #575757;
@@ -401,6 +407,7 @@ slider working*/
   left: 0;
   right: 0;
   margin: 20px auto;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -449,7 +456,7 @@ sup {
 
 [class*="pricelist__listing"] li {
   font-size: 1.5rem;
-  padding: 6px 0;
+  padding: 8px 0;
 }
 
 .pricelist__listing--odd li:nth-child(2n+1) {
@@ -513,7 +520,7 @@ sup {
   position: absolute;
   width: 320px;
   top: 40px;
-  left: 0;
+  left: 10px;
   font-family: "ralewaymedium";
   font-size: 1.3rem;
   color: #575757;
