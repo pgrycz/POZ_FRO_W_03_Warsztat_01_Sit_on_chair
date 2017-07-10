@@ -163,16 +163,16 @@ slider working*/
   display: table;
 }
 
-/*don't know how to make (z-index???) .slider_prev over offsetted to the left .slider_main*/
 .slider__prev, .slider__next {
-  font-family: "ralewaylight";
+  position: absolute;
+  z-index: 1;
   font-size: 5rem;
   color: #24BA9F;
   margin-top: 200px;
 }
 
 .slider__next {
-  float: right;
+  right: 0;
 }
 
 .slider__main > * {
@@ -181,6 +181,7 @@ slider working*/
 
 .slider__main {
   position: absolute;
+  z-index: 0;
   left: -30px;
   width: 974px;
 }
@@ -329,7 +330,6 @@ slider working*/
   display: table;
 }
 
-/*didn't know haw to write [class*="headline"]::after selector to add bottom border that way*/
 .pricelist__headline {
   position: absolute;
   width: 320px;
@@ -338,8 +338,9 @@ slider working*/
   font-family: "ralewaymedium";
   font-size: 1.3rem;
   color: #575757;
-  padding-bottom: 3px;
-  border-bottom: 7px solid #24BA9F;
+  padding-bottom: 3px; /*didn't know haw to write "[class*="headline"]::after"*/
+  border-bottom: 7px solid #24BA9F;   /*selector to add bottom border that way*/
+
 }
 
 /*pricelist items with price plans*/
