@@ -330,7 +330,17 @@ slider working*/
   display: table;
 }
 
-.pricelist__headline {
+[class*="headline"]::after {
+  content: '';
+  display: block;
+  width: 320px;
+  height: 7px;
+  background-color: #24BA9F;
+  margin-top: 3px;
+}
+
+.pricelist__headline,
+.contact__headline {
   position: absolute;
   width: 320px;
   top: 40px;
@@ -338,9 +348,6 @@ slider working*/
   font-family: "ralewaymedium";
   font-size: 1.3rem;
   color: #575757;
-  padding-bottom: 3px; /*didn't know haw to write "[class*="headline"]::after"*/
-  border-bottom: 7px solid #24BA9F;   /*selector to add bottom border that way*/
-
 }
 
 /*pricelist items with price plans*/
@@ -517,22 +524,11 @@ sup {
   position: relative;
 }
 
-.contact__headline {
-  position: absolute;
-  width: 320px;
-  top: 40px;
-  left: 10px;
-  font-family: "ralewaymedium";
-  font-size: 1.3rem;
-  color: #575757;
-  padding-bottom: 3px;
-  border-bottom: 7px solid #24BA9F;
-}
-
 .contact * {
   display: block;
 }
 
+/*.contact__headline element styled earlier with .pricelist__headline element*/
 .contact__form,
 .submit__form {
   float: left;
