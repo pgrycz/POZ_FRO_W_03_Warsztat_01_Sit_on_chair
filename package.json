@@ -1,0 +1,26 @@
+{
+  "name": "gulp-pawel",
+  "version": "1.0.0",
+  "description": "custom npm file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pawel_grycz",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgrycz/POZ_FRO_W_03_Warsztat_01_Sit_on_chair.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pgrycz/POZ_FRO_W_03_Warsztat_01_Sit_on_chair/issues"
+  },
+  "homepage": "https://github.com/pgrycz/POZ_FRO_W_03_Warsztat_01_Sit_on_chair#readme"
+}
