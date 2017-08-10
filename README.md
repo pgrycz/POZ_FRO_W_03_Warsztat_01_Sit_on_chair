@@ -10,7 +10,4 @@
 1. Instalacja Gulp globalnie ```npm install -g gulp```
 1. Instalacja paczek npm będąc w katalogu głównym projektu ```npm install```
 1. W konsoli wpisać ```gulp sass``` (enter) i ```gulp watch``` (enter) aby mieć 	 kompilację z formatu .scss do .css i podgląd ew. błędów (aby wyjść ctrl+c)
-1. W katalogu głównym projektu są pliki potrzebne do działania Gulpa _gulpfile.js_ oraz _package.json_ odpowiedzialny za instalację zależności poprzez npm (```npm install```) i są one nie potrzebne do działania strony, tak jak plik _README.md_ i _LICENSE_oraz katalog _scss_
-
-
-
+1. W katalogu głównym projektu są pliki potrzebne do działania Gulpa _gulpfile.js_ oraz _package.json_ odpowiedzialny za instalację zależności poprzez npm (```npm install```) i są one nie potrzebne do działania strony, tak jak plik _README.md_ i _LICENSE_ oraz katalog _scss_
