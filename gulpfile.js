@@ -5,8 +5,6 @@ let gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
-// Ciało naszego zadania.
-// console.log('hallo!');
   return gulp.src('scss/**/*.scss')
   .pipe(sourcemaps.init())
   .pipe(plumber())
