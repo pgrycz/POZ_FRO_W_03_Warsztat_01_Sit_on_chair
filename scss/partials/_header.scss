@@ -1,0 +1,67 @@
+/*header*/
+header {
+  background-color: $header-color;
+  padding: 12px 0 10px 0;
+  color: $header-font-color;
+}
+
+.header {
+  &__logo {
+    font: $medium-font;
+    font-size: .85rem;
+    letter-spacing: .04rem;
+    margin-left: 2px;
+  }
+  &__logo--bold {
+    font: $bold-font;
+    color: $lead-color;
+    font-size: .85rem;
+    letter-spacing: .04rem;
+  }
+  &__nav {
+    float: right;
+    a {
+      font: $semibold-font;
+      font-size: .85rem;
+      letter-spacing: .04rem;
+      color: $header-font-color;
+      &:nth-child(1) {
+        .submenu {
+          display: none;
+          position: absolute;
+          top: 52px;
+          left: 70%;
+          background-color: $header-color;
+          padding: 4px 19px 8px 12px;
+          a {
+            display: block;
+            font: $medium-font;
+            font-size: .95rem;
+            color: $header-font-color;
+            padding-top: 10px;
+            &:nth-child(2) {
+              margin: 0;
+            }
+          }
+          .triangle {
+            position: absolute;
+            top: -9px;
+            left: 45px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent $header-color transparent;
+          }
+        }
+      }
+      &:nth-child(2) {
+        margin-left: 47px;
+        margin-right: 33px;
+      }
+    }
+  }
+  &__nav:after {
+    @extend %fix-clear-float;
+  }
+}

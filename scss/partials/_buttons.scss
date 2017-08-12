@@ -1,0 +1,41 @@
+.slider {
+  &__button {
+    display: block;
+    padding-top: 14px;
+    margin-left: 87px;
+    margin-top: 32px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 265px;
+    height: 52px;
+    background-color: $lead-color;
+    color: $slider-button-font-color;
+    border-radius: 10px;
+  }
+}
+
+.pricelist__button {
+  &--odd {
+    @include pricelist-button;
+    background-color: $lead-color;
+    color: nth($pricelist-item-greys, 1);
+  }
+  &--even {
+    @include pricelist-button;
+    background-color: nth($pricelist-item-greys, 1);
+    color: $lead-color;
+  }
+}
+
+input[type="submit"] {
+  font: $semibold-font;
+  font-size: 2.1rem;
+  width: 100%;
+  padding: 16px;
+  margin-top: 316px;
+  margin-left: 5px;
+  color: #FFF;
+  background-color: $lead-color;
+  border-radius: 10px;
+  cursor: pointer;
+}

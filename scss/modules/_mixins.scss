@@ -1,0 +1,156 @@
+// mixins
+@mixin slider-gradient {
+  background: #fafafa; /* Old browsers */
+  background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 40%, #cccbd3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fafafa 0%,#fafafa 40%,#cccbd3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fafafa 0%,#fafafa 40%,#cccbd3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cccbd3',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin slider-logo {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+@mixin slider-nav {
+  font: $light-font;
+  position: absolute;
+  z-index: 1;
+  font-size: 5rem;
+  color: $lead-color;
+  margin-top: 208px;
+}
+
+@mixin title {
+  position: absolute;
+  width: 138px;
+  font: $medium-font;
+  padding-bottom: 2px;
+  border-bottom: 7px solid $lead-color;
+}
+
+@mixin transparent-item {
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  width: 329px;
+  height: 62px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@mixin headline {
+  position: absolute;
+  width: 320px;
+  top: 36px;
+  left: 13px;
+  font: $medium-font;
+  font-size: 1.3rem;
+  color: $pricelist-headline-font-color;
+}
+
+@mixin headline-transparent {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 320px;
+  height: 8px;
+  background-color: $lead-color;
+  left: -2px;
+  margin-top: 6px;
+}
+
+@mixin circle-small {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+@mixin circle-large {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: 26px auto 32px;
+  text-align: center;
+}
+
+@mixin pricelist-item {
+  position: relative;
+  width: 330px;
+  height: 500px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+@mixin pricelist-title {
+  display: block;
+  font: $beetwen-font;
+  font-size: 1.5rem;
+  letter-spacing: -.9px;
+}
+
+@mixin pricelist-price {
+  position: absolute;
+  display: block;
+  left: 132px;
+  font: $semibold-font;
+  font-size: 2.8rem;
+  margin: 24px 0 3px 0;
+}
+
+@mixin sup {
+  position: absolute;
+  top: 2px;
+  left: 50px;
+  font: $semibold-font;
+}
+
+@mixin pricelist-currency {
+  position: absolute;
+  top: 162px;
+  left: 125px;
+  font: $semibold-font;
+  font-size: 1rem;
+}
+
+@mixin pricelist-listing {
+  font-size: 1.5rem;
+  padding: 8px 0;
+}
+
+@mixin pricelist-button {
+  position: absolute;
+  display: block;
+  width: 122px;
+  height: 34px;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 8px 0;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+@mixin form {
+  width: 100%;
+  border: 1px solid $lead-lighter-color;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 14px;
+  color: nth($pricelist-item-greys, 4);
+}
+
+@mixin footer-logo {
+  font-size: 1.3rem;
+  letter-spacing: .2px;
+  color: nth($pricelist-item-greys, 5);
+}

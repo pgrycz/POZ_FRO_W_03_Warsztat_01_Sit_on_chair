@@ -1,0 +1,31 @@
+/*footer*/
+.footer {
+  &__register {
+    float: left;
+    margin-top: 98px;
+    letter-spacing: .9px;
+    color: nth($pricelist-item-greys, 5);
+  }
+  &__logo {
+    float: right;
+  }
+  &__social {
+    position: absolute;
+    left: 897px;
+    bottom: -1175px;
+  }
+  &__logo {
+    margin-top: 93px;
+    margin-left: 65px;
+    font: $medium-font;
+    @include footer-logo;
+  }
+  &__logo--bold {
+    font: $semibold-font;
+    @include footer-logo;
+  }
+  &__social {
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+}
