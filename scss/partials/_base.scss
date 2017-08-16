@@ -1,10 +1,10 @@
 /*container, centered*/
 [class*="container"] {
+	position: relative;
 	max-width: 1076px;
 	margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-	overflow: auto;
 	font: $default-font;
 }
 
@@ -12,7 +12,6 @@
 .slider {
 	@include slider-gradient;
 	&__container {
-	  position: relative;
 	  height: 505px;
 		> * {
 		  float: left;
@@ -135,7 +134,7 @@
   padding-bottom: 27px;
   background-color: $pricelist-background-color;
 	&__container {
-	  position: relative;
+		overflow: auto;
 		> div {
 		  float: left;
 		  margin-top: 150px;
@@ -201,9 +200,9 @@
 		}
 	}
 	&__important {
-		left: 118px !important;
+		left: 118px;
 		sup {
-			left: 68px !important;
+			left: 68px;
 		}
 	}
 	&__price--even {
@@ -259,9 +258,6 @@
 .contact {
 	* {
 	  display: block;
-	}
-	&__container {
-	  position: relative;
 	}
 	&__headline {
 		@include headline;

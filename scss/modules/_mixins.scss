@@ -147,6 +147,7 @@
   font-family: inherit;
   padding: 14px;
   color: nth($pricelist-item-greys, 4);
+  outline: none;
 }
 
 @mixin footer-logo {

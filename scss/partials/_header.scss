@@ -5,6 +5,13 @@ header {
   color: $header-font-color;
 }
 
+nav {
+  float: right;
+  &:after {
+    @extend %fix-clear-float;
+  }
+}
+
 .header {
   &__logo {
     font: $medium-font;
@@ -19,49 +26,60 @@ header {
     letter-spacing: .04rem;
   }
   &__nav {
-    float: right;
-    a {
-      font: $semibold-font;
-      font-size: .85rem;
-      letter-spacing: .04rem;
-      color: $header-font-color;
-      &:nth-child(1) {
-        .submenu {
-          display: none;
-          position: absolute;
-          top: 52px;
-          left: 70%;
-          background-color: $header-color;
-          padding: 4px 19px 8px 12px;
-          a {
-            display: block;
-            font: $medium-font;
-            font-size: .95rem;
-            color: $header-font-color;
-            padding-top: 10px;
-            &:nth-child(2) {
-              margin: 0;
-            }
-          }
-          .triangle {
-            position: absolute;
-            top: -9px;
-            left: 45px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 10px 10px 10px;
-            border-color: transparent transparent $header-color transparent;
-          }
+    position: relative;
+    > li {
+      float: left;
+      &:after {
+        @extend %fix-clear-float;
+      }
+      &:hover {
+        > a {
+          color: $lead-color;
+          transition: all 0.3s;
         }
       }
       &:nth-child(2) {
-        margin-left: 47px;
-        margin-right: 33px;
+        margin-left: 51px;
+        margin-right: 37px;
+      }
+      a {
+        font: $semibold-font;
+        font-size: .85rem;
+        letter-spacing: .04rem;
+        color: $header-font-color;
       }
     }
   }
-  &__nav:after {
-    @extend %fix-clear-float;
+  &__submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -16px;
+    background-color: $header-color;
+    padding: 13px 20px 8px 11px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -10px;
+      left: 44px;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent $header-color transparent;
+    }
+    li {
+      &:nth-of-type(2) {
+        padding-top: 8px;
+        padding-bottom: 9px;
+      }
+      a {
+        font: $medium-font;
+        font-size: .95rem;
+        letter-spacing: .4px;
+        color: $header-font-color;
+        margin-left: 1px;
+      }
+    }
   }
 }
