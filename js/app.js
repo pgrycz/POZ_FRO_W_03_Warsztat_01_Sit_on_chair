@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
       menuLink = menu[0].getElementsByTagName('li'),
       subMenu = document.getElementsByClassName('header__submenu');
 
-  menuLink[0].addEventListener('click', function() {
+  function toggleMenu() {
     if (subMenu[0].style.display === 'none') {
       subMenu[0].style.display = 'block';
     } else {
       subMenu[0].style.display = 'none';
     }
-  });
+  };
+
+  menuLink[0].addEventListener('click', toggleMenu);
 
 });

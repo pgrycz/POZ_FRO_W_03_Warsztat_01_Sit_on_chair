@@ -56,7 +56,7 @@ nav {
     top: 40px;
     left: -16px;
     background-color: $header-color;
-    padding: 13px 20px 8px 11px;
+    padding: 13px 17px 13px 14px;
     &:before {
       content: '';
       position: absolute;
@@ -72,6 +72,12 @@ nav {
       &:nth-of-type(2) {
         padding-top: 8px;
         padding-bottom: 9px;
+      }
+      &:hover {
+        > a {
+          color: $lead-color;
+          transition: all 0.3s;
+        }
       }
       a {
         font: $medium-font;
