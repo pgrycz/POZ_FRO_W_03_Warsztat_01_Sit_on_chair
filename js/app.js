@@ -4,14 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
       menuLink = menu[0].getElementsByTagName('li'),
       subMenu = document.getElementsByClassName('header__submenu');
 
-  function toggleMenu() {
+  function showSubMenu() {
     if (subMenu[0].style.display === 'none') {
       subMenu[0].style.display = 'block';
-    } else {
-      subMenu[0].style.display = 'none';
     }
   };
 
-  menuLink[0].addEventListener('click', toggleMenu);
+  function hideSubMenu() {
+      subMenu[0].style.display = 'none';
+  };
+
+  menuLink[0].addEventListener('click', showSubMenu);
+  menuLink[0].addEventListener('mouseleave', hideSubMenu);
 
 });
