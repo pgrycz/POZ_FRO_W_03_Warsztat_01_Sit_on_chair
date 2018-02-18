@@ -1,20 +1,58 @@
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
-  let menu = document.getElementsByClassName('header__nav'),
-      menuLink = menu[0].getElementsByTagName('li'),
-      subMenu = document.getElementsByClassName('header__submenu');
+//   // on hover menu header
+//   let menu = document.getElementsByClassName('header__nav');
+//   let menuLinks = menu[0].children;
+//   let menuBridge = document.getElementsByClassName('header__bridge');
 
+//   function showSubMenu() {
+//     this.children[0].nextElementSibling.style.display = 'block';
+//   }
+//   function hideSubMenu() {
+//     this.style.display = 'none';
+//   }
+
+//   for (let i = 0; i < menuLinks.length; i ++) {
+//     menuLinks[i].addEventListener('mouseover', showSubMenu);
+//   }
+//   for (let i = 0; i < menuBridge.length; i ++) {
+//     menuBridge[i].addEventListener('mouseout', hideSubMenu);
+//   }
+
+// });
+
+$(function() {
+
+  // on hover menu header
+  let menu = $(document).find('.header__nav');
+  let menuLinks = menu.children();
+  let menuBridge = $(document).find('.header__bridge');
+  
   function showSubMenu() {
-    if (subMenu[0].style.display === 'none') {
-      subMenu[0].style.display = 'block';
-    }
-  };
-
+    $(this).children().fadeIn(300);
+    $(this).children().css('display', 'block');
+  }
   function hideSubMenu() {
-      subMenu[0].style.display = 'none';
-  };
+    $(this).fadeOut(300);
+    $(this).css('display', 'none');
+  }
+ 
+  menuLinks.on('mouseenter', showSubMenu);
+  menuBridge.on('mouseleave', hideSubMenu);
 
-  menuLink[0].addEventListener('click', showSubMenu);
-  menuLink[0].addEventListener('mouseleave', hideSubMenu);
+  // description fade elements on hover
+  let descriptionBox = $(document).find('.description__img');
+
+  function fadeOut() {
+    $(this).children().eq(1).fadeOut(200);
+    $(this).children().eq(2).fadeOut(200);
+  }
+  function fadeIn() {
+    $(this).children().eq(1).fadeIn(200);
+    $(this).children().eq(2).fadeIn(200);
+  }
+
+  descriptionBox.on('mouseenter', fadeOut);
+  descriptionBox.on('mouseleave', fadeIn);
 
 });

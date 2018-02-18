@@ -29,7 +29,6 @@ nav:after {
     > a {
       display: block;
       margin-top: 2px;
-      height: 40px;
       font: $semibold-font;
       font-size: .85rem;
       letter-spacing: .04rem;
@@ -39,7 +38,7 @@ nav:after {
   > li:after {
     @extend %fix-clear-float;
   }
-  > li:hover {
+  li:hover {
     > a {
       color: $lead-color;
       transition: all 0.3s ease-in-out;
@@ -50,11 +49,19 @@ nav:after {
     margin-right: 37px;
   }
 }
-.header__submenu {
+.header__bridge {
   display: none;
   position: absolute;
-  top: 40px;
-  left: -16px;
+  left: -20px;
+  top: -5px;
+  width: 120px;
+  height: 145px;
+  z-index: 1;
+}
+.header__submenu {
+  position: relative;
+  top: 45px;
+  text-align: center;
   background-color: $header-color;
   padding: 13px 17px 13px 14px;
   li {
