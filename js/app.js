@@ -30,11 +30,9 @@ $(function() {
   
   function showSubMenu() {
     $(this).children().fadeIn(300);
-    $(this).children().css('display', 'block');
   }
   function hideSubMenu() {
     $(this).fadeOut(300);
-    $(this).css('display', 'none');
   }
  
   menuLinks.on('mouseenter', showSubMenu);
@@ -45,7 +43,7 @@ $(function() {
 
   function fadeOut() {
     $(this).children().eq(1).fadeOut(200);
-    $(this).children().eq(2).fadeOut(200);
+    $(this).children().eq(2).delay(300).fadeOut(200);
   }
   function fadeIn() {
     $(this).children().eq(1).fadeIn(200);
