@@ -62,6 +62,21 @@ $(function() {
   function typeChange() {
     $('#chairType').each(function() {
       value = Number($('#chairType option:selected').attr('data-price'));
+      if (Number($('#chairType option:selected').attr('data-price')) === 200) {
+        $('.order__img img:nth-of-type(1)').css({display: 'block'});
+        $('.order__img img:nth-of-type(2)').css({display: 'none'});
+        $('.order__img img:nth-of-type(3)').css({display: 'none'});
+      } else if (Number($('#chairType option:selected').attr('data-price')) === 300) {
+        $('.order__img img:nth-of-type(1)').css({display: 'none'});
+        $('.order__img img:nth-of-type(2)').css({display: 'block'});
+        $('.order__img img:nth-of-type(3)').css({display: 'none'});
+      } else if (Number($('#chairType option:selected').attr('data-price')) === 250) {
+        $('.order__img img:nth-of-type(1)').css({display: 'none'});
+        $('.order__img img:nth-of-type(2)').css({display: 'none'});
+        $('.order__img img:nth-of-type(3)').css({display: 'block'});
+      } else {
+        $('.order__img img').css({display: 'none'});
+      }
       rows.children().eq(1).text(value);
       price();
     });

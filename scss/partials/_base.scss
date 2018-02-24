@@ -318,7 +318,7 @@
 		select {
 			margin: 11px 0;
 			padding: 10px 0 10px 10px;
-			width: 310px;
+			width: 321px;
 			font-size: 2rem;
 			color: nth($pricelist-item-greys, 4);
 			background-color: $header-font-color;
@@ -328,8 +328,11 @@
 	}
 	&__img {
 		position: relative;
-		top: -20px;
-		margin-left: 90px;
+		top: -60px;
+		left: -7px;
+		img {
+			width: 400px;
+		}
 	}
 	&__calculate {
 		position: absolute;
@@ -340,19 +343,19 @@
 		top: -30px;
 		background-color: #fff;
 		border: 13px solid #fff;
-		width: 336px;
+		width: 322px;
 		font-size: 1.5rem;
 		color: nth($pricelist-item-greys, 4)
 	}
 	&__table--left {
 		border-right: 1px solid nth($pricelist-item-greys, 3);
 		text-align: left;
-		width: 190px;
+		width: 180px;
 		padding: 0 0 3px 5px;
 	}
 	&__table--right {
 		padding: 0 5px 3px 12px;
-		width: 130px;
+		width: 110px;
 		color: $lead-color;
 	}
 	tr:nth-of-type(1) {
