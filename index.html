@@ -50,8 +50,7 @@
         <ul>
           <li><img src="images/black_chair.png" alt="black chair"></li>
           <li><img src="images/red_chair_slider.png" alt="red chair"></li>
-          <li><img src="images/black_chair.png" alt="black chair"></li>
-          <li><img src="images/red_chair_slider.png" alt="red chair"></li>
+          <li><img src="images/orange_chair_slider.png" alt="orange chair"></li>
         </ul>
       </div>
       <div class="slider__text">
@@ -147,6 +146,68 @@
 
   </div>
 </section>
+<!-- section with ordering and ordered items calculator -->
+<section class="order">
+  <div class="order__container">
+
+    <span class="order__headline">SKOMPONUJ SWOJE KRZESŁO</span>
+    <span class="order__headline--right">PODSUMOWANIE</span>
+    <div class="order__selection">
+      <select id="chairType">
+        <option data-price="0">Wybierz rodzaj</option>
+        <option data-price="200">Chair Clair</option>
+        <option data-price="300">Chair Margarita</option>
+        <option data-price="250">Chair Selena</option>
+      </select>
+      <select id="chairColor">
+        <option data-price="0">Wybierz kolor</option>
+        <option data-price="10">Czarny</option>
+        <option data-price="20">Pomarańczowy</option>
+        <option data-price="30">Czerwony</option>
+      </select>
+      <select id="chairMaterial">
+        <option data-price="0">Wybierz materiał</option>
+        <option data-price="0">Tkanina</option>
+        <option data-price="80">Skóra</option>
+      </select>
+      <div class="transport">
+        <input type="checkbox"
+               id="transport">
+        <label for="transport"></label>
+        <span class="transport__label">Transport</span>
+      </div>
+    </div>
+    <div class="order__img">
+      <img src="images/red_chair.png" alt="red chair">
+    </div>
+    <div class="order__calculate">
+      <table>
+        <tr>
+          <td class="order__table--left">Twój fotel</td>
+          <td class="order__table--right"></td>
+        </tr>
+        <tr>
+          <td class="order__table--left">kolor</td>
+          <td class="order__table--right"></td>
+        </tr>
+        <tr>
+          <td class="order__table--left">materiał</td>
+          <td class="order__table--right"></td>
+        </tr>
+        <tr>
+          <td class="order__table--left">transport</td>
+          <td class="order__table--right"></td>
+        </tr>
+        <tr>
+          <td class="order__table--left">Suma</td>
+          <td class="order__table--right"></td>
+        </tr>
+      </table>
+      <input id="order__button" type="button" value="ZAMAWIAM">
+    </div>
+
+  </div>
+</section>
 <!-- section with two parted contact forms -->
 <section class="contact">
   <div class="contact__container">
@@ -170,10 +231,9 @@
            alt="red chair">
       <div class="submit">
         <input type="checkbox"
-               id="checkbox"
-               checked>
+               id="checkbox">
         <label for="checkbox"></label>
-        <span class="checkbox__label">Zgadzam się na przetwarzanie danych osobowych</span>
+        <span class="submit__label">Zgadzam się na przetwarzanie danych osobowych</span>
       </div>
       <input type="submit"
              value="WYŚLIJ">
